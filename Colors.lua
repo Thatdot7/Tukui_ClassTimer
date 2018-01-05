@@ -13,4 +13,4 @@ Colors = {
   ["PLAYER_DEBUFF_COLOR"]   = nil,
 }
 
-ClassTimerAPI["Colors"] = Colors
+ClassTimerAPI.Colors = Colors

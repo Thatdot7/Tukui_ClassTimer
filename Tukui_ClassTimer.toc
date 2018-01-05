@@ -4,7 +4,6 @@
 ## RequiredDeps: Tukui
 
 Init.lua
+Database\Init.xml
 Colors.lua
-Classes/DeathKnight.lua
-Classes/Priest.lua
 core.lua
