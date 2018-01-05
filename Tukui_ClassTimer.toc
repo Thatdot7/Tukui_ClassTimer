@@ -3,7 +3,9 @@
 ## Author: Kryso
 ## RequiredDeps: Tukui
 
+Config.lua
 Init.lua
 Database\Init.xml
 Colors.lua
+ConfigLocale.lua
 core.lua

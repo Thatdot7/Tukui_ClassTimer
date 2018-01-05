@@ -48,8 +48,30 @@ ClassTimer.Filter["PALADIN"] = {
 		ClassTimer:CreateSpellEntry(498), -- Divine Protection
 		ClassTimer:CreateSpellEntry(221883), -- Divine Steed
 		ClassTimer:CreateSpellEntry(31821), -- Aura Mastery
+		ClassTimer:CreateSpellEntry(115750), --Blinding Light
+		ClassTimer:CreateSpellEntry(223819), -- Divine Purpose
+		ClassTimer:CreateSpellEntry(105809), -- Holy Avenger
+		ClassTimer:CreateSpellEntry(204150), -- Aegis of Light
+		ClassTimer:CreateSpellEntry(53380), -- Righteous Vengeance
+		ClassTimer:CreateSpellEntry(31935), -- Avenger's Shield
+		ClassTimer:CreateSpellEntry(26573), -- Consecration
+		ClassTimer:CreateSpellEntry(31842), -- Divine Illumination
+		ClassTimer:CreateSpellEntry(64205), -- Divine Sacrifice
+		ClassTimer:CreateSpellEntry(53563), -- Beacon of Light
+		ClassTimer:CreateSpellEntry(31833), -- Light's Grace
+		ClassTimer:CreateSpellEntry(53672), -- Infusion of Light
+		ClassTimer:CreateSpellEntry(20049), -- Vengeance
+		ClassTimer:CreateSpellEntry(20335), -- Heart of the Crusader
+		ClassTimer:CreateSpellEntry(53380), -- Righteous Vengeance
+		ClassTimer:CreateSpellEntry(9452), -- Vindication
 	},
 	procs = {
 		ClassTimer:CreateSpellEntry(152262), -- Seraphim
 	},
 }
+
+ClassTimer.AddClassPosition["PALADIN"] = function (self)
+	-- Offset the frame higher by 8px to accommodate the Holy bar
+	self:SetPoint( "BOTTOMLEFT", oUF_TukuiPlayer, "TOPLEFT", 0, 14 );
+	self:SetPoint( "BOTTOMRIGHT", oUF_TukuiPlayer, "TOPRIGHT", 0, 14 );
+end
