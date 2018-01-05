@@ -1,0 +1,10 @@
+## Interface: 70000
+## Title: |cffC495DDTukui Class Timer|r
+## Author: Kryso
+## RequiredDeps: Tukui
+
+Init.lua
+Colors.lua
+Classes/DeathKnight.lua
+Classes/Priest.lua
+core.lua
