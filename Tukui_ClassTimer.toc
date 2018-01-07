@@ -1,6 +1,7 @@
 ## Interface: 70000
 ## Title: |cffC495DDTukui Class Timer|r
 ## Author: Kryso
+## Remastered by Thatdot7
 ## Dependencies: Tukui
 
 Config.lua
