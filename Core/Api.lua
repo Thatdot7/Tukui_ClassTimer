@@ -83,7 +83,7 @@ function ClassTimerAPI:CreateUnitAuraDataSource(unit)
 	end
 
 	local Sort = function( self )
-		self.sortDirection = C["ClassTimer"]["SORT_DIRECTION"];
+		self.sortDirection = C["ClassTimer"]["SORT_DIRECTION"]["Value"];
 		local direction = self.sortDirection;
 		local time = GetTime();
 
@@ -611,7 +611,6 @@ function ClassTimerAPI:CreateAuraBarFrame(dataSource, parent)
 	result.Render = Render;
 	result.SetHiddenHeight = SetHiddenHeight;
 
-	print("AuraBarFrame created")
 	return result;
 end
 

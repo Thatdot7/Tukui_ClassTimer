@@ -1,11 +1,9 @@
 ## Interface: 70000
 ## Title: |cffC495DDTukui Class Timer|r
 ## Author: Kryso
-## RequiredDeps: Tukui
+## Dependencies: Tukui
 
 Config.lua
-Init.lua
-Database\Init.xml
-Colors.lua
+Core\Init.xml
 ConfigLocale.lua
-core.lua
+Database\Init.xml

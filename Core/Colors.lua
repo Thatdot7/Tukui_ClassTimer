@@ -1,7 +1,6 @@
 local T, C, L = Tukui:unpack();
 
 local ClassTimerAPI = T["ClassTimer"];
-local Colors = CreateFrame("Frame");
 
 Colors = {
   ["ICON_COLOR"]            = {0.47, 0.47, 0.47, 1},

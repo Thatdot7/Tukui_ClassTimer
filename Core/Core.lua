@@ -52,8 +52,8 @@ function ClassTimer:Target()
 
 	local frameAnchor;
 	do
-		if (C["ClassTimer"]["LAYOUT"] == 1) then
-			 frameAnchor = ClassTimer.TimerFrames.Trinket
+		if (C["ClassTimer"]["LAYOUT"]["Value"] == 1) then
+			frameAnchor = ClassTimer.TimerFrames.Trinket
 		else
 			frameAnchor = oUF_TukuiTarget
 		end
@@ -66,27 +66,27 @@ function ClassTimer:Target()
 	ClassTimer.TimerFrames.Target = targetFrame
 end
 
-
-
 local init = function()
-	print("Tukui_ClassTimer started")
 
-		ClassTimer:Player()
-		ClassTimer.TimerFrames.Player:Show()
+	ClassTimer:Player()
+	ClassTimer.TimerFrames.Player:Show()
 
-		ClassTimer:Trinket()
-		ClassTimer.TimerFrames.Trinket:Show()
+	ClassTimer:Trinket()
+	ClassTimer.TimerFrames.Trinket:Show()
 
-		ClassTimer:Target()
-		ClassTimer.TimerFrames.Target:Show()
+	ClassTimer:Target()
+	ClassTimer.TimerFrames.Target:Show()
 
 end
 
-local setup = CreateFrame( "Frame", nil, UIParent );
-setup:RegisterEvent( "PLAYER_ENTERING_WORLD" );
-setup:SetScript( "OnEvent", function ( self, event )
-	if (event == "PLAYER_ENTERING_WORLD") then
-		init();
-		setup:SetScript( "OnEvent", nil );
-	end
-end );
+-- Main
+if (C["ClassTimer"]["ENABLE"] == true) then
+	local setup = CreateFrame( "Frame", nil, UIParent );
+	setup:RegisterEvent( "PLAYER_ENTERING_WORLD" );
+	setup:SetScript( "OnEvent", function ( self, event )
+		if (event == "PLAYER_ENTERING_WORLD") then
+			init();
+			setup:SetScript( "OnEvent", nil );
+		end
+	end );
+end

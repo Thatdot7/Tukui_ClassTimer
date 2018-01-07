@@ -1,24 +1,17 @@
 local T, C, L = Tukui:unpack()
 
 local OptionsMenu = {
-
-		["MyOwnOption01"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
-		},
-
-		["MyOwnOption02"] = {
-			["Name"] = "Option 02",
-			["Desc"] = "Enable/Disable Option 02",
-		},
-
+    ["ENABLE"] = {
+      ["Name"] = "Enable",
+      ["Desc"] = "Enable/Disable the ClassTimer Addon",
+    },
     ["BAR_HEIGHT"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Bar Height",
+			["Desc"] = "Height of each bar",
 		},
   	["BAR_SPACING"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Bar Spacing",
+			["Desc"] = "Spacing between each bar",
 		},
 
     --[[ Layouts
@@ -28,13 +21,13 @@ local OptionsMenu = {
     	4 - player and trinket auras are shown above player frame and target auras are shown above target frame
     ]]--
     ["LAYOUT"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Layout Options",
+			["Desc"] = "Describes where to put the DoT Timers",
 		},
 
     ["BACKGROUND_ALPHA"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Background Alpha",
+			["Desc"] = "Specify the alpha of the background (between 0-1)",
 		},
 
     --[[ Show icons outside of frame (flags - that means you can combine them - for example 3 means it will be outside the right edge)
@@ -49,20 +42,20 @@ local OptionsMenu = {
 		},
 
     ["SPARK"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Spark",
+			["Desc"] = "Enable/Disable Spark",
 		},
     ["CAST_SEPARATOR"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Cast Separator",
+			["Desc"] = "Enable/Disable Cast Seperator",
 		},
     ["TEXT_MARGIN"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Text Margin",
+			["Desc"] = "Specify the text margin",
 		},
     ["PERMANENT_AURA_VALUE"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Permanent Aura Value",
+			["Desc"] = "Permanent Aura Value",
 		},
 
 
@@ -71,15 +64,15 @@ local OptionsMenu = {
     	true - descending
     ]]--
     ["SORT_DIRECTION"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Sort Direction",
+			["Desc"] = "Set Sort Direction",
 		},
 
     -- Timer tenths threshold - range from 1 to 60
     ["TENTHS_TRESHOLD"] = {
-			["Name"] = "Option 01",
-			["Desc"] = "Enable/Disable Option 01",
+			["Name"] = "Timer tenths threshold",
+			["Desc"] = "Timer tenths threshold - range from 1 to 60",
 		},
 	}
 
-TukuiConfig.enUS["MyOwnOption"] = MyOwnOption
+TukuiConfig.enUS["ClassTimer"] = OptionsMenu

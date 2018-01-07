@@ -1,6 +1,7 @@
 local T, C, L = Tukui:unpack();
 
 C["ClassTimer"] = {
+	["ENABLE"] = true,
 	["BAR_HEIGHT"] = 20,
 	["BAR_SPACING"] = 1,
 
@@ -10,7 +11,14 @@ C["ClassTimer"] = {
   	3 - player, target and trinket auras separated into three frames above player frame
   	4 - player and trinket auras are shown above player frame and target auras are shown above target frame
   ]]--
-  ["LAYOUT"] = 1,
+  ["LAYOUT"] = {
+		["Options"] = {
+			["DoTs on Player Frame"] = 1,
+			["DoTs on Target Frame"] = 2,
+		},
+
+		["Value"] = 1,
+	},
 
   ["BACKGROUND_ALPHA"] = 0.75,
 
@@ -30,8 +38,16 @@ C["ClassTimer"] = {
   --[[ Sort direction
   	false - ascending
   	true - descending
-  ]]--
-  ["SORT_DIRECTION"] = true,
+		]]--
+	["SORT_DIRECTION"] = {
+
+		["Options"] = {
+			["Ascending"] = true,
+			["Descending"] = false,
+		},
+
+		["Value"] = true,
+	},
 
   -- Timer tenths threshold - range from 1 to 60
   ["TENTHS_TRESHOLD"] = 1,

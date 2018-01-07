@@ -1,0 +1,6 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Api.lua"/>
+	<Script file="Colors.lua"/>
+	<Script file="Core.lua"/>
+
+</Ui>
