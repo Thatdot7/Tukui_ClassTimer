@@ -40,7 +40,15 @@ ClassTimer.Filter["PRIEST"] = {
 		ClassTimer:CreateSpellEntry(59887), -- Borrowed Time
 		ClassTimer:CreateSpellEntry(47930), -- Grace
 		ClassTimer:CreateSpellEntry(81662), -- Evangelism
+		ClassTimer:CreateSpellEntry(194249), -- Voidform stacks
 
 
 	},
 }
+
+ClassTimer.AddClassPosition["PRIEST"] = function (self)
+	-- Offset the frame higher by 8px to accommodate the rune bar
+	self:SetHiddenHeight(-14);
+	self:SetPoint( "BOTTOMLEFT", oUF_TukuiPlayer, "TOPLEFT", 0, 14 );
+	self:SetPoint( "BOTTOMRIGHT", oUF_TukuiPlayer, "TOPRIGHT", 0, 14 );
+end

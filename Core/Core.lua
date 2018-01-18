@@ -13,10 +13,10 @@ function ClassTimer:Player()
 	playerDataSource:AddFilter( classFilter.player, T["ClassTimer"]["Colors"]["PLAYER_BAR_COLOR"], T["ClassTimer"]["Colors"]["PLAYER_DEBUFF_COLOR"] );
 
 	local playerFrame = ClassTimer:CreateAuraBarFrame( playerDataSource, oUF_TukuiPlayer );
-	playerFrame:SetHiddenHeight( -yOffset );
 	if ( ClassTimer.AddClassPosition[ playerClass ] ~= nil) then
 		ClassTimer.AddClassPosition[ playerClass ](playerFrame)
 	else
+		playerFrame:SetHiddenHeight( -yOffset );
 		playerFrame:SetPoint( "BOTTOMLEFT", oUF_TukuiPlayer, "TOPLEFT", 0, yOffset );
 		playerFrame:SetPoint( "BOTTOMRIGHT", oUF_TukuiPlayer, "TOPRIGHT", 0, yOffset );
 	end

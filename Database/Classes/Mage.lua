@@ -14,7 +14,6 @@ ClassTimer.Filter["MAGE"] = {
 		ClassTimer:CreateSpellEntry(12654), -- Ignite
 		ClassTimer:CreateSpellEntry(11366), -- Pyroblast
 		ClassTimer:CreateSpellEntry(92315), -- Pyroblast!
-		ClassTimer:CreateSpellEntry(11129), -- Combustion
 		ClassTimer:CreateSpellEntry(132209), -- Pyromaniac
 		ClassTimer:CreateSpellEntry(114954), -- Nether Tempest
 		ClassTimer:CreateSpellEntry(113092), -- Frost Bomb
@@ -35,9 +34,12 @@ ClassTimer.Filter["MAGE"] = {
 
 	},
 	player = {
-		ClassTimer:CreateSpellEntry(30451), -- Arcane Blast
+		ClassTimer:CreateSpellEntry(190319), -- Combustion
+
 		ClassTimer:CreateSpellEntry(66), -- Invisiblity
-		ClassTimer:CreateSpellEntry(12043), -- Presence of Mind
+		ClassTimer:CreateSpellEntry(110960), -- Greater Invisiblity
+
+		ClassTimer:CreateSpellEntry(205025), -- Presence of Mind
 		ClassTimer:CreateSpellEntry(116257), -- Invoker's Energy
 		ClassTimer:CreateSpellEntry(116011), -- Rune of Power
 		ClassTimer:CreateSpellEntry(1463), -- Incanter's Ward
@@ -59,6 +61,7 @@ ClassTimer.Filter["MAGE"] = {
 		ClassTimer:CreateSpellEntry(11255), -- Improved Counterspell
 	},
 	procs = {
+		ClassTimer:CreateSpellEntry(205473), -- Icicles
 
 	},
 }
