@@ -5,7 +5,7 @@ local ClassTimer = T["ClassTimer"]
 local Config = C["ClassTimer"]
 
 function ClassTimer:Player()
-	local yOffset = 6;
+	local yOffset = 14;
 	local _, playerClass = UnitClass( "player" );
 	local classFilter = T["ClassTimer"].Filter[ playerClass ];
 
@@ -13,13 +13,9 @@ function ClassTimer:Player()
 	playerDataSource:AddFilter( classFilter.player, T["ClassTimer"]["Colors"]["PLAYER_BAR_COLOR"], T["ClassTimer"]["Colors"]["PLAYER_DEBUFF_COLOR"] );
 
 	local playerFrame = ClassTimer:CreateAuraBarFrame( playerDataSource, oUF_TukuiPlayer );
-	if ( ClassTimer.AddClassPosition[ playerClass ] ~= nil) then
-		ClassTimer.AddClassPosition[ playerClass ](playerFrame)
-	else
-		playerFrame:SetHiddenHeight( -yOffset );
-		playerFrame:SetPoint( "BOTTOMLEFT", oUF_TukuiPlayer, "TOPLEFT", 0, yOffset );
-		playerFrame:SetPoint( "BOTTOMRIGHT", oUF_TukuiPlayer, "TOPRIGHT", 0, yOffset );
-	end
+	playerFrame:SetHiddenHeight( -yOffset );
+	playerFrame:SetPoint( "BOTTOMLEFT", oUF_TukuiPlayer, "TOPLEFT", 0, yOffset );
+	playerFrame:SetPoint( "BOTTOMRIGHT", oUF_TukuiPlayer, "TOPRIGHT", 0, yOffset );
 
 	ClassTimer.TimerFrames.Player = playerFrame
 end

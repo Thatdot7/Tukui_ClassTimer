@@ -10,45 +10,38 @@ end
 
 ClassTimer.Filter["PRIEST"] = {
 	target = {
-		ClassTimer:CreateSpellEntry(33076), -- Prayer of Mending
-		ClassTimer:CreateSpellEntry(589), -- Shadow Word: Pain
-		ClassTimer:CreateSpellEntry(15487), -- Silence
-		ClassTimer:CreateSpellEntry(14914), -- Holy Fire
-		ClassTimer:CreateSpellEntry(64044), -- Psychic Horror
-		ClassTimer:CreateSpellEntry(204197), -- Purge the Wicked
-		ClassTimer:CreateSpellEntry(34914), -- Vampiric Touch
-		ClassTimer:CreateSpellEntry(8122), -- Psychic Scream
-		ClassTimer:CreateSpellEntry(9484), -- Shackle Undead
+		ClassTimer:CreateSpellEntry("Prayer of Mending"), -- Prayer of Mending
+		ClassTimer:CreateSpellEntry("Shadow Word: Pain"), -- Shadow Word: Pain
+		ClassTimer:CreateSpellEntry("Silence"), -- Silence
+		ClassTimer:CreateSpellEntry("Holy Fire"), -- Holy Fire
+		ClassTimer:CreateSpellEntry("Psychic Horror"), -- Psychic Horror
+		ClassTimer:CreateSpellEntry("Purge the Wicked"), -- Purge the Wicked
+		ClassTimer:CreateSpellEntry("Vapiric Touch"), -- Vampiric Touch
+		ClassTimer:CreateSpellEntry("Psychic Scream"), -- Psychic Scream
+		ClassTimer:CreateSpellEntry("Shackle Undead"), -- Shackle Undead
 	},
 	player = {
-		ClassTimer:CreateSpellEntry(47585), -- Dispersion
-		ClassTimer:CreateSpellEntry(15286), -- Vampiric Embrace
-		ClassTimer:CreateSpellEntry(33206), -- Pain Suppression
-		ClassTimer:CreateSpellEntry(10060), -- Power Infusion
-		ClassTimer:CreateSpellEntry(47753), --Divine Aegis
-		ClassTimer:CreateSpellEntry(139), -- Renew
-		ClassTimer:CreateSpellEntry(47788), -- Guardian Spirit
-		ClassTimer:CreateSpellEntry(20711), -- Spirit of Redemption
-		ClassTimer:CreateSpellEntry(6788), -- Weakened Soul
-		ClassTimer:CreateSpellEntry(586), -- Fade
-		ClassTimer:CreateSpellEntry(1706), -- Levitate
-		ClassTimer:CreateSpellEntry(17), -- Power Word: Shield
+		ClassTimer:CreateSpellEntry("Dispension"), -- Dispersion
+		ClassTimer:CreateSpellEntry("Vampiric Embrace"), -- Vampiric Embrace
+		ClassTimer:CreateSpellEntry("Pain Suppression"), -- Pain Suppression
+		ClassTimer:CreateSpellEntry("Power Infusion"), -- Power Infusion
+		ClassTimer:CreateSpellEntry("Divine Aegis"), --Divine Aegis
+		ClassTimer:CreateSpellEntry("Renew"), -- Renew
+		ClassTimer:CreateSpellEntry("Guardian Spirit"), -- Guardian Spirit
+		ClassTimer:CreateSpellEntry("Spirit of Redemption"), -- Spirit of Redemption
+		ClassTimer:CreateSpellEntry("Weakened Soul"), -- Weakened Soul
+		ClassTimer:CreateSpellEntry("Fade"), -- Fade
+		ClassTimer:CreateSpellEntry("Levi"), -- Levitate
+		ClassTimer:CreateSpellEntry("Power Word: Shield"), -- Power Word: Shield
 	},
 	procs = {
-		ClassTimer:CreateSpellEntry(33150), -- Surge of Light
-		ClassTimer:CreateSpellEntry(63735), -- Serendipity
-		ClassTimer:CreateSpellEntry(59887), -- Borrowed Time
-		ClassTimer:CreateSpellEntry(47930), -- Grace
-		ClassTimer:CreateSpellEntry(81662), -- Evangelism
-		ClassTimer:CreateSpellEntry(194249), -- Voidform stacks
+		ClassTimer:CreateSpellEntry("Surge of Light"), -- Surge of Light
+		ClassTimer:CreateSpellEntry("Serendipity"), -- Serendipity
+		ClassTimer:CreateSpellEntry("Borrowed Time"), -- Borrowed Time
+		ClassTimer:CreateSpellEntry("Grace"), -- Grace
+		ClassTimer:CreateSpellEntry("Evangelism"), -- Evangelism
+		ClassTimer:CreateSpellEntry("Voidform"), -- Voidform stacks
 
 
 	},
 }
-
-ClassTimer.AddClassPosition["PRIEST"] = function (self)
-	-- Offset the frame higher by 8px to accommodate the rune bar
-	self:SetHiddenHeight(-14);
-	self:SetPoint( "BOTTOMLEFT", oUF_TukuiPlayer, "TOPLEFT", 0, 14 );
-	self:SetPoint( "BOTTOMRIGHT", oUF_TukuiPlayer, "TOPRIGHT", 0, 14 );
-end

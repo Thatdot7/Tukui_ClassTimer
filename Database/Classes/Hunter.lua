@@ -9,46 +9,44 @@ end
 
 ClassTimer.Filter["HUNTER"] = {
 	target = {
-		ClassTimer:CreateSpellEntry(3043), -- Scorpid Sting
-		ClassTimer:CreateSpellEntry(1978), -- Serpent Sting
-		ClassTimer:CreateSpellEntry(3034), -- Viper Sting
-		ClassTimer:CreateSpellEntry(19386), -- Wyvern Sting
-		ClassTimer:CreateSpellEntry(3385), -- Boar Charge
-		ClassTimer:CreateSpellEntry(61685), -- Charge
-		ClassTimer:CreateSpellEntry(35100), -- Concussive Barrage
-		ClassTimer:CreateSpellEntry(5116), -- Concussive Shot
-		ClassTimer:CreateSpellEntry(19407), -- Improved Concussive Shot
-		ClassTimer:CreateSpellEntry(19228), -- Improved Wing Clip
-		ClassTimer:CreateSpellEntry(19577), -- Intimidation
-		ClassTimer:CreateSpellEntry(117526), -- Binding Shot
-		ClassTimer:CreateSpellEntry(2974), -- Wing Clip
-		ClassTimer:CreateSpellEntry(34500), -- Expose Weakness
-		ClassTimer:CreateSpellEntry(1543), -- Flare
-		ClassTimer:CreateSpellEntry(82692), -- Focus Fire
-		ClassTimer:CreateSpellEntry(1130), -- Hunter's Mark
-		ClassTimer:CreateSpellEntry(53243), -- Marked for Death
-		ClassTimer:CreateSpellEntry(53480), -- Roar of Sacrifice
-		ClassTimer:CreateSpellEntry(6150), -- Quick Shots
-		ClassTimer:CreateSpellEntry(168809), -- ST. Recently Moved
-		ClassTimer:CreateSpellEntry(1513), -- Scare Beast
-		ClassTimer:CreateSpellEntry(131894), -- A Murder of Crows
-		ClassTimer:CreateSpellEntry(3674), -- Black Arrow
-		ClassTimer:CreateSpellEntry(187131), -- Vulnerable
-		ClassTimer:CreateSpellEntry(34490), -- Silencing Shot
-		ClassTimer:CreateSpellEntry(63668), -- Black Arrow
-		ClassTimer:CreateSpellEntry(13812), -- Explosive Trap Effect
-		ClassTimer:CreateSpellEntry(3355), -- Freezing Trap Effect
-		ClassTimer:CreateSpellEntry(13810), -- Frost Trap Aura
-		ClassTimer:CreateSpellEntry(13797), -- Immolation Trap Effect
+		ClassTimer:CreateSpellEntry("Scorpid Sting"), -- Scorpid Sting
+		ClassTimer:CreateSpellEntry("Serpent Sting"), -- Serpent Sting
+		ClassTimer:CreateSpellEntry("Viper Sting"), -- Viper Sting
+		ClassTimer:CreateSpellEntry("Wyvern Sting"), -- Wyvern Sting
+		ClassTimer:CreateSpellEntry("Boar Charge"), -- Boar Charge
+		ClassTimer:CreateSpellEntry("Charge"), -- Charge
+		ClassTimer:CreateSpellEntry("Concussive Barrage"), -- Concussive Barrage
+		ClassTimer:CreateSpellEntry("Concussive Shot"), -- Concussive Shot
+		ClassTimer:CreateSpellEntry("Improved Concussive Shot"), -- Improved Concussive Shot
+		ClassTimer:CreateSpellEntry("Improved Wing Clip"), -- Improved Wing Clip
+		ClassTimer:CreateSpellEntry("Intimidation"), -- Intimidation
+		ClassTimer:CreateSpellEntry("Binding Shot"), -- Binding Shot
+		ClassTimer:CreateSpellEntry("Wing Clip"), -- Wing Clip
+		ClassTimer:CreateSpellEntry("Expose Weakness"), -- Expose Weakness
+		ClassTimer:CreateSpellEntry("Flare"), -- Flare
+		ClassTimer:CreateSpellEntry("Focus Fire"), -- Focus Fire
+		ClassTimer:CreateSpellEntry("Hunter's Mark"), -- Hunter's Mark
+		ClassTimer:CreateSpellEntry("Marked for Death"), -- Marked for Death
+		ClassTimer:CreateSpellEntry("Roar of Sacrifice"), -- Roar of Sacrifice
+		ClassTimer:CreateSpellEntry("Quick Shots"), -- Quick Shots
+		ClassTimer:CreateSpellEntry("Scare Beast"), -- Scare Beast
+		ClassTimer:CreateSpellEntry("A Murder of Crows"), -- A Murder of Crows
+		ClassTimer:CreateSpellEntry(" Black Arrow"), -- Black Arrow
+		ClassTimer:CreateSpellEntry("Vulnerable"), -- Vulnerable
+		ClassTimer:CreateSpellEntry("Silencing Shot"), -- Silencing Shot
+		ClassTimer:CreateSpellEntry("Explosive Trap"), -- Explosive Trap Effect
+		ClassTimer:CreateSpellEntry("Freezing Trap"), -- Freezing Trap Effect
+		ClassTimer:CreateSpellEntry("Frost Trap"), -- Frost Trap Aura
+		ClassTimer:CreateSpellEntry("Immolation Trap"), -- Immolation Trap Effect
 	},
 	player = {
-		ClassTimer:CreateSpellEntry(19263), -- Deterrence
-		ClassTimer:CreateSpellEntry(1539), -- Feed Pet Effect
-		ClassTimer:CreateSpellEntry(53517), -- Roar of Recovery
-		ClassTimer:CreateSpellEntry(34506), -- Master Tactician
-		ClassTimer:CreateSpellEntry(136), -- Mend Pet
-		ClassTimer:CreateSpellEntry(168811), -- Sniper Training
-		ClassTimer:CreateSpellEntry(3045), -- Rapid Fire
+		ClassTimer:CreateSpellEntry("Deterrence"), -- Deterrence
+		ClassTimer:CreateSpellEntry("Feed Pet"), -- Feed Pet Effect
+		ClassTimer:CreateSpellEntry("Roar of Recovery"), -- Roar of Recovery
+		ClassTimer:CreateSpellEntry("Master Tactician"), -- Master Tactician
+		ClassTimer:CreateSpellEntry("Mend Pet"), -- Mend Pet
+		ClassTimer:CreateSpellEntry("Sniper Training"), -- Sniper Training
+		ClassTimer:CreateSpellEntry("Rapid Fire"), -- Rapid Fire
 
 	},
 	procs = {

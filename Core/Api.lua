@@ -10,8 +10,8 @@ color - bar color (nil for default color)
 unitType - 0 all, 1 friendly, 2 enemy
 castSpellId - fill only if you want to see line on bar that indicates if its safe to start casting spell and not clip the last tick, also note that this can be different from aura id
 ]]--
-function ClassTimerAPI:CreateSpellEntry( id, castByAnyone, color, unitType, castSpellId )
-	return { id = id, castByAnyone = castByAnyone, color = color, unitType = unitType or 0, castSpellId = castSpellId };
+function ClassTimerAPI:CreateSpellEntry( spellName )
+	return { spellName = spellName };
 end
 
 ClassTimerAPI.Filter = {}
@@ -25,13 +25,16 @@ function ClassTimerAPI:CreateUnitAuraDataSource(unit)
 	local auraTypes = { "HELPFUL", "HARMFUL" };
 
 	-- private
-	local CheckFilter = function( self, id, caster, filter )
+	local CheckFilter = function( self, spellName, caster, filter )
+
 		if ( filter == nil ) then return false; end
 
 		local byPlayer = caster == "player" or caster == "pet" or caster == "vehicle";
 
 		for _, v in ipairs( filter ) do
-			if ( v.id == id and ( v.castByAnyone or byPlayer ) ) then return v; end
+			if ( v.spellName == spellName and byPlayer ) then
+				return v;
+			end
 		end
 
 		return false;
@@ -46,12 +49,15 @@ function ClassTimerAPI:CreateUnitAuraDataSource(unit)
 			local isDebuff = auraType == "HARMFUL";
 
 			for index = 1, 40 do
-				local name, _, texture, stacks, _, duration, expirationTime, caster, _, _, spellId = UnitAura( unit, index, auraType );
+				local name, texture, stacks, _, duration, expirationTime, caster, _, _, spellId = UnitAura( unit, index, auraType );
+				--local name, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId = UnitAura( unit, index, auraType );
+				-- Unending Breath 136148 0 nil 600.001 580790.271 target false false 5697 true
+				--print(name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, shouldConsolidate, spellId);
 				if ( name == nil ) then
 					break;
 				end
 
-				local filterInfo = CheckFilter( self, spellId, caster, filter );
+				local filterInfo = CheckFilter( self, name, caster, filter );
 				if ( filterInfo and ( filterInfo.unitType ~= 1 or unitIsFriend ) and ( filterInfo.unitType ~= 2 or not unitIsFriend ) ) then
 					filterInfo.name = name;
 					filterInfo.texture = texture;
@@ -121,7 +127,7 @@ function ClassTimerAPI:CreateUnitAuraDataSource(unit)
 		for _, v in pairs( filter ) do
 			local clone = { };
 
-			clone.id = v.id;
+			clone.spellName = v.spellName;
 			clone.castByAnyone = v.castByAnyone;
 			clone.color = v.color;
 			clone.unitType = v.unitType;
@@ -140,7 +146,7 @@ function ClassTimerAPI:CreateUnitAuraDataSource(unit)
 		for _, v in pairs( filter ) do
 			local clone = { };
 
-			clone.id = v.id;
+			clone.spellName = v.spellName;
 			clone.castByAnyone = v.castByAnyone;
 			clone.color = v.color;
 			clone.unitType = v.unitType;

@@ -10,35 +10,35 @@ end
 ClassTimer.Filter["MONK"] = {
 	target = {
 
-		GetSpellInfo(115804), -- Mortal Wounds
-		GetSpellInfo(128531), -- Blackout Kick
-		GetSpellInfo(107428), -- Rising Sun Kick
-		GetSpellInfo(115180), -- Dizzying Haze
-		GetSpellInfo(116095), -- Disable
-		GetSpellInfo(119381), -- Leg Sweep
-		GetSpellInfo(115078), -- Paralysis
+		ClassTimer:CreateSpellEntry("Mortal Wounds"), -- Mortal Wounds
+		ClassTimer:CreateSpellEntry("Blackout Kick"), -- Blackout Kick
+		ClassTimer:CreateSpellEntry("Rising Sun Kick"), -- Rising Sun Kick
+		ClassTimer:CreateSpellEntry("Dizzying Haze"), -- Dizzying Haze
+		ClassTimer:CreateSpellEntry("Disable"), -- Disable
+		ClassTimer:CreateSpellEntry("Leg Sweep"), -- Leg Sweep
+		ClassTimer:CreateSpellEntry("Paralysis"), -- Paralysis
 	},
 	player = {
-		GetSpellInfo(122278), -- Dampen Harm
-		GetSpellInfo(115213), -- Avert Harm
-		GetSpellInfo(124280), -- Touch of Karma
-		GetSpellInfo(115308), -- Elusive Brew
-		GetSpellInfo(115203), -- Fortifying Brew
-		GetSpellInfo(124682), -- Enveloping Mist
-		GetSpellInfo(115151), -- Renewing Mist
-		GetSpellInfo(115175), -- Soothing Mist
-		GetSpellInfo(115307), -- Shuffle
-		GetSpellInfo(120274), -- Tiger Strikes
-		GetSpellInfo(118636), -- Power Guard
-		GetSpellInfo(121125), -- Death Note
-		GetSpellInfo(125359), -- Tiger Power
-		GetSpellInfo(115288), -- Energizing Brew
-		GetSpellInfo(115295), -- Guard
-		GetSpellInfo(116768), -- Combo Breaker: Blackout Kick
-		GetSpellInfo(118864), -- Combo Breaker: Tiger Palm
-		GetSpellInfo(101546), -- Spinning Crane Kick
-		GetSpellInfo(116740), -- Tigereye Brew
-		(GetSpellInfo(122783)), -- Diffuse Magic
+		ClassTimer:CreateSpellEntry("Dampen Harm"), -- Dampen Harm
+		ClassTimer:CreateSpellEntry(" Avert Harm"), -- Avert Harm
+		ClassTimer:CreateSpellEntry("Touch of Karma"), -- Touch of Karma
+		ClassTimer:CreateSpellEntry("Elusive Brew"), -- Elusive Brew
+		ClassTimer:CreateSpellEntry("Fortifying Brew"), -- Fortifying Brew
+		ClassTimer:CreateSpellEntry("Enveloping Mist"), -- Enveloping Mist
+		ClassTimer:CreateSpellEntry("Renewing Mist"), -- Renewing Mist
+		ClassTimer:CreateSpellEntry("Soothing Mist"), -- Soothing Mist
+		ClassTimer:CreateSpellEntry("Shuffle"), -- Shuffle
+		ClassTimer:CreateSpellEntry("Tiger Strikes"), -- Tiger Strikes
+		ClassTimer:CreateSpellEntry("Power Guard"), -- Power Guard
+		ClassTimer:CreateSpellEntry("Death Note"), -- Death Note
+		ClassTimer:CreateSpellEntry("Tiger Power"), -- Tiger Power
+		ClassTimer:CreateSpellEntry("Energizing Brew"), -- Energizing Brew
+		ClassTimer:CreateSpellEntry("Guard"), -- Guard
+		ClassTimer:CreateSpellEntry("Combo Breaker: Blackout Kick"), -- Combo Breaker: Blackout Kick
+		ClassTimer:CreateSpellEntry("Combo Breaker: Tiger Palm"), -- Combo Breaker: Tiger Palm
+		ClassTimer:CreateSpellEntry("Spinning Crane Kick"), -- Spinning Crane Kick
+		ClassTimer:CreateSpellEntry("Tigereye Brew"), -- Tigereye Brew
+		ClassTimer:CreateSpellEntry(" Diffuse Magic"), -- Diffuse Magic
 	},
 	procs = {
 

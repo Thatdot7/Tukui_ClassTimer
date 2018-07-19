@@ -9,42 +9,39 @@ end
 
 ClassTimer.Filter["DRUID"] = {
 	target = {
-		ClassTimer:CreateSpellEntry(339), -- Entangling Roots
-		ClassTimer:CreateSpellEntry(2637), -- Hibernate
-		ClassTimer:CreateSpellEntry(164815), -- Sunfire
-		ClassTimer:CreateSpellEntry(115798), -- Weakened Blows
-		ClassTimer:CreateSpellEntry(202347), -- Stellar Flare
-		ClassTimer:CreateSpellEntry(164812), -- Moonfire
-		ClassTimer:CreateSpellEntry(50334), -- Berserk
-		ClassTimer:CreateSpellEntry(16857), -- Faerie Fire (Feral)
-		ClassTimer:CreateSpellEntry(16979), -- Feral Charge - Bear
-		ClassTimer:CreateSpellEntry(33831), -- Force of Nature
-		ClassTimer:CreateSpellEntry(33878), -- Mangle (Bear)
-		ClassTimer:CreateSpellEntry(33876), -- Mangle (Cat)
-		ClassTimer:CreateSpellEntry(48438), -- Wild Growth
-		ClassTimer:CreateSpellEntry(69369), -- Predator's Swiftness
-		ClassTimer:CreateSpellEntry(124974), -- Nature's Vigil
-		ClassTimer:CreateSpellEntry(106922), -- Might of Ursoc
-		ClassTimer:CreateSpellEntry(102558), -- Incarnation: Sun of Ursoc
-		ClassTimer:CreateSpellEntry(102543), -- Incarnation: King of the Jungle
-		ClassTimer:CreateSpellEntry(102560), -- Incarnation: Chosen of Elune
-		ClassTimer:CreateSpellEntry(117679), -- Incarnation   (this is the one used for Tree of Life)
-		ClassTimer:CreateSpellEntry(16689), -- Nature's Grasp
-		ClassTimer:CreateSpellEntry(33786), -- Cyclone
-		ClassTimer:CreateSpellEntry(770), -- Faerie Fire
-		ClassTimer:CreateSpellEntry(2637), -- Hibernate
+		ClassTimer:CreateSpellEntry("Entangling Roots"), -- Entangling Roots
+		ClassTimer:CreateSpellEntry("Hibernate"), -- Hibernate
+		ClassTimer:CreateSpellEntry("Sunfire"), -- Sunfire
+		ClassTimer:CreateSpellEntry("Weakened Blows"), -- Weakened Blows
+		ClassTimer:CreateSpellEntry("Stellar Flare"), -- Stellar Flare
+		ClassTimer:CreateSpellEntry("Moonfire"), -- Moonfire
+		ClassTimer:CreateSpellEntry("Berserk"), -- Berserk
+		ClassTimer:CreateSpellEntry("Faerie Fire"), -- Faerie Fire (Feral)
+		ClassTimer:CreateSpellEntry("Feral Charge"), -- Feral Charge - Bear
+		ClassTimer:CreateSpellEntry("Force of Nature"), -- Force of Nature
+		ClassTimer:CreateSpellEntry("Mangle"), -- Mangle (Bear)
+		ClassTimer:CreateSpellEntry("Wild Growth"), -- Wild Growth
+		ClassTimer:CreateSpellEntry("Predator's Swiftness"), -- Predator's Swiftness
+		ClassTimer:CreateSpellEntry("Nature's Vigil"), -- Nature's Vigil
+		ClassTimer:CreateSpellEntry("Might of Ursoc"), -- Might of Ursoc
+		ClassTimer:CreateSpellEntry("Incarnation: Sun of Ursoc"), -- Incarnation: Sun of Ursoc
+		ClassTimer:CreateSpellEntry("Incarnation: King of the Jungle"), -- Incarnation: King of the Jungle
+		ClassTimer:CreateSpellEntry("Incarnation: Chosen of Elune"), -- Incarnation: Chosen of Elune
+		ClassTimer:CreateSpellEntry("Incarnation"), -- Incarnation   (this is the one used for Tree of Life)
+		ClassTimer:CreateSpellEntry("Nature's Grasp"), -- Nature's Grasp
+		ClassTimer:CreateSpellEntry("Cyclone"), -- Cyclone
+		ClassTimer:CreateSpellEntry("Hibernate"), -- Hibernate
 	},
 	player = {
-		ClassTimer:CreateSpellEntry(22812), -- Barkskin
-		ClassTimer:CreateSpellEntry(12536), -- Clearcasting
-		ClassTimer:CreateSpellEntry(29166), -- Innervate
-		ClassTimer:CreateSpellEntry(33763), -- Lifebloom
-		ClassTimer:CreateSpellEntry(8936), -- Regrowth
-		ClassTimer:CreateSpellEntry(100977), -- Harmony
-		ClassTimer:CreateSpellEntry(158792), -- Pulverize
-		ClassTimer:CreateSpellEntry(155777), -- Rejuv (Germination)
-		ClassTimer:CreateSpellEntry(191034), -- Starfall
-		ClassTimer:CreateSpellEntry(774), -- Rejuvenation
+		ClassTimer:CreateSpellEntry("Barkskin"), -- Barkskin
+		ClassTimer:CreateSpellEntry("Clearcasting"), -- Clearcasting
+		ClassTimer:CreateSpellEntry("Innervate"), -- Innervate
+		ClassTimer:CreateSpellEntry("Lifebloom"), -- Lifebloom
+		ClassTimer:CreateSpellEntry("Regrowth"), -- Regrowth
+		ClassTimer:CreateSpellEntry("Harmony"), -- Harmony
+		ClassTimer:CreateSpellEntry("Pulverize"), -- Pulverize
+		ClassTimer:CreateSpellEntry("Rejuvenation"), -- Rejuv (Germination)
+		ClassTimer:CreateSpellEntry("Starfall"), -- Starfall
 	},
 	procs = {
 

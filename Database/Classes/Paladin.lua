@@ -69,9 +69,3 @@ ClassTimer.Filter["PALADIN"] = {
 		ClassTimer:CreateSpellEntry(152262), -- Seraphim
 	},
 }
-
-ClassTimer.AddClassPosition["PALADIN"] = function (self)
-	-- Offset the frame higher by 8px to accommodate the Holy bar
-	self:SetPoint( "BOTTOMLEFT", oUF_TukuiPlayer, "TOPLEFT", 0, 14 );
-	self:SetPoint( "BOTTOMRIGHT", oUF_TukuiPlayer, "TOPRIGHT", 0, 14 );
-end

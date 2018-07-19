@@ -9,59 +9,55 @@ end
 
 ClassTimer.Filter["MAGE"] = {
 	target = {
-		ClassTimer:CreateSpellEntry(133), -- Fireball
-		ClassTimer:CreateSpellEntry(2120), -- Flamestrike
-		ClassTimer:CreateSpellEntry(12654), -- Ignite
-		ClassTimer:CreateSpellEntry(11366), -- Pyroblast
-		ClassTimer:CreateSpellEntry(92315), -- Pyroblast!
-		ClassTimer:CreateSpellEntry(132209), -- Pyromaniac
-		ClassTimer:CreateSpellEntry(114954), -- Nether Tempest
-		ClassTimer:CreateSpellEntry(113092), -- Frost Bomb
-		ClassTimer:CreateSpellEntry(44457), -- Living Bomb
-		ClassTimer:CreateSpellEntry(11180), -- Winter's Chill
-		ClassTimer:CreateSpellEntry(120), -- Cone of Cold
-		ClassTimer:CreateSpellEntry(31661), -- Dragon's Breath
-		ClassTimer:CreateSpellEntry(168), -- Frost Armor
-		ClassTimer:CreateSpellEntry(122), -- Frost Nova
-		ClassTimer:CreateSpellEntry(11071), -- Frostbite
-		ClassTimer:CreateSpellEntry(116), -- Frostbolt
-		ClassTimer:CreateSpellEntry(11175), -- Permafrost
-		ClassTimer:CreateSpellEntry(118), -- Polymorph
-		ClassTimer:CreateSpellEntry(28272), -- Polymorph: Pig
-		ClassTimer:CreateSpellEntry(28271), -- Polymorph: Turtle
-		ClassTimer:CreateSpellEntry(61305), -- Polymorph: Black Cat
-		ClassTimer:CreateSpellEntry(2139), -- Counterspell
+		ClassTimer:CreateSpellEntry("Fireball"), -- Fireball
+		ClassTimer:CreateSpellEntry("Flamestrike"), -- Flamestrike
+		ClassTimer:CreateSpellEntry("Ignite"), -- Ignite
+		ClassTimer:CreateSpellEntry("Pyroblast"), -- Pyroblast
+		ClassTimer:CreateSpellEntry("Pyromaniac"), -- Pyromaniac
+		ClassTimer:CreateSpellEntry("Nether Tempest"), -- Nether Tempest
+		ClassTimer:CreateSpellEntry("Frost Bomb"), -- Frost Bomb
+		ClassTimer:CreateSpellEntry("Living Bomb"), -- Living Bomb
+		ClassTimer:CreateSpellEntry("Winter's Chill"), -- Winter's Chill
+		ClassTimer:CreateSpellEntry("Cone of Cold"), -- Cone of Cold
+		ClassTimer:CreateSpellEntry("Dragon's Breath"), -- Dragon's Breath
+		ClassTimer:CreateSpellEntry("Frost Armor"), -- Frost Armor
+		ClassTimer:CreateSpellEntry("Frost Nova"), -- Frost Nova
+		ClassTimer:CreateSpellEntry("Frostbite"), -- Frostbite
+		ClassTimer:CreateSpellEntry("Frostbolt"), -- Frostbolt
+		ClassTimer:CreateSpellEntry("Permafrost"), -- Permafrost
+		ClassTimer:CreateSpellEntry("Polymorph"), -- Polymorph
+		ClassTimer:CreateSpellEntry("Counterspell"), -- Counterspell
 
 	},
 	player = {
-		ClassTimer:CreateSpellEntry(190319), -- Combustion
+		ClassTimer:CreateSpellEntry("Combustion"), -- Combustion
 
-		ClassTimer:CreateSpellEntry(66), -- Invisiblity
-		ClassTimer:CreateSpellEntry(110960), -- Greater Invisiblity
+		ClassTimer:CreateSpellEntry("Invisiblity"), -- Invisiblity
+		ClassTimer:CreateSpellEntry("Greater Invisiblity"), -- Greater Invisiblity
 
-		ClassTimer:CreateSpellEntry(205025), -- Presence of Mind
-		ClassTimer:CreateSpellEntry(116257), -- Invoker's Energy
-		ClassTimer:CreateSpellEntry(116011), -- Rune of Power
-		ClassTimer:CreateSpellEntry(1463), -- Incanter's Ward
-		ClassTimer:CreateSpellEntry(116267), -- Incanter's Absorbtion
-		(ClassTimer:CreateSpellEntry(30482)), -- Molten Armor
-		ClassTimer:CreateSpellEntry(31641), -- Blazing Speed
-		ClassTimer:CreateSpellEntry(11426), -- Ice Barrier
-		ClassTimer:CreateSpellEntry(45438), -- Ice Block
+		ClassTimer:CreateSpellEntry("Presence of Mind"), -- Presence of Mind
+		ClassTimer:CreateSpellEntry("Invoker's Energy"), -- Invoker's Energy
+		ClassTimer:CreateSpellEntry("Rune of Power"), -- Rune of Power
+		ClassTimer:CreateSpellEntry("Incanter's Ward"), -- Incanter's Ward
+		ClassTimer:CreateSpellEntry("Incanter's Absorbtion"), -- Incanter's Absorbtion
+		ClassTimer:CreateSpellEntry("Molten Armor"), -- Molten Armor
+		ClassTimer:CreateSpellEntry("Blazing Speed"), -- Blazing Speed
+		ClassTimer:CreateSpellEntry("Ice Barrier"), -- Ice Barrier
+		ClassTimer:CreateSpellEntry("Ice Block"), -- Ice Block
 
-		(ClassTimer:CreateSpellEntry(130)), -- Slow Fall
-		ClassTimer:CreateSpellEntry(12042), -- Arcane Power
-		ClassTimer:CreateSpellEntry(12472), -- Icy Veins
-		ClassTimer:CreateSpellEntry(48108), -- Hot Streak
-		ClassTimer:CreateSpellEntry(64343), -- Impact
-		ClassTimer:CreateSpellEntry(44401), -- Missile Barrage
-		ClassTimer:CreateSpellEntry(44543), -- Fingers of Frost
-		ClassTimer:CreateSpellEntry(31589), -- Slow
-		ClassTimer:CreateSpellEntry(55342), -- Mirror Image
-		ClassTimer:CreateSpellEntry(11255), -- Improved Counterspell
+		ClassTimer:CreateSpellEntry("Slow Fall"), -- Slow Fall
+		ClassTimer:CreateSpellEntry("Arcane Power"), -- Arcane Power
+		ClassTimer:CreateSpellEntry("Icy Veins"), -- Icy Veins
+		ClassTimer:CreateSpellEntry("Hot Streak"), -- Hot Streak
+		ClassTimer:CreateSpellEntry("Impact"), -- Impact
+		ClassTimer:CreateSpellEntry("Missile Barrage"), -- Missile Barrage
+		ClassTimer:CreateSpellEntry("Fingers of Frost"), -- Fingers of Frost
+		ClassTimer:CreateSpellEntry("Slow"), -- Slow
+		ClassTimer:CreateSpellEntry("Mirror Image"), -- Mirror Image
+		ClassTimer:CreateSpellEntry("Improved Counterspell"), -- Improved Counterspell
 	},
 	procs = {
-		ClassTimer:CreateSpellEntry(205473), -- Icicles
+		ClassTimer:CreateSpellEntry("Icicles"), -- Icicles
 
 	},
 }

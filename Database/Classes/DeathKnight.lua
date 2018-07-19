@@ -9,34 +9,28 @@ end
 
 ClassTimer.Filter["DEATHKNIGHT"] = {
   target = {
-		ClassTimer:CreateSpellEntry(191587), -- Virulent Plague
-		ClassTimer:CreateSpellEntry(197147), -- Festering Wound
-		ClassTimer:CreateSpellEntry(115798), -- Weakened Blows
+		ClassTimer:CreateSpellEntry("Virulent Plague"), -- Virulent Plague
+		ClassTimer:CreateSpellEntry("Festering Wound"), -- Festering Wound
+		ClassTimer:CreateSpellEntry("Weakened Blows"), -- Weakened Blows
   },
 	player = {
-		ClassTimer:CreateSpellEntry(51271), -- Unbreakable Armor
-		ClassTimer:CreateSpellEntry(48792), -- Icebound Fortitude
-		ClassTimer:CreateSpellEntry(55095), -- Frost Fever
-		ClassTimer:CreateSpellEntry(81131), -- Scarlet Fever
-		ClassTimer:CreateSpellEntry(49194), -- Unholy Blight
-		ClassTimer:CreateSpellEntry(22744), -- Chains of Ice
-		ClassTimer:CreateSpellEntry(55078), -- Blood Plague
-		ClassTimer:CreateSpellEntry(51726), -- Ebon Plague
-		ClassTimer:CreateSpellEntry(59052), -- Freezing Fog
-		ClassTimer:CreateSpellEntry(51123), -- Killing Machine
-		ClassTimer:CreateSpellEntry(49182), -- Blade Barrier
-		ClassTimer:CreateSpellEntry(55233), -- Vampiric Blood
-		ClassTimer:CreateSpellEntry(63560), -- Ghoul Frenzy (Pet)
-		ClassTimer:CreateSpellEntry(63560), -- Dark Transformation (Pet)
-		ClassTimer:CreateSpellEntry(49222), -- Bone Shield
+		ClassTimer:CreateSpellEntry("Unbreakable Armor"), -- Unbreakable Armor
+		ClassTimer:CreateSpellEntry("Icebound Fortitude"), -- Icebound Fortitude
+		ClassTimer:CreateSpellEntry("Frost Fever"), -- Frost Fever
+		ClassTimer:CreateSpellEntry("Scarlet Fever"), -- Scarlet Fever
+		ClassTimer:CreateSpellEntry("Unholy Blight"), -- Unholy Blight
+		ClassTimer:CreateSpellEntry("Chains of Ice"), -- Chains of Ice
+		ClassTimer:CreateSpellEntry("Blood Plague"), -- Blood Plague
+		ClassTimer:CreateSpellEntry("Ebon Plague"), -- Ebon Plague
+		ClassTimer:CreateSpellEntry("Freezing Fog"), -- Freezing Fog
+		ClassTimer:CreateSpellEntry("Killing Machine"), -- Killing Machine
+		ClassTimer:CreateSpellEntry("Blade Barrier"), -- Blade Barrier
+		ClassTimer:CreateSpellEntry("Vampiric Blood"), -- Vampiric Blood
+		ClassTimer:CreateSpellEntry("Ghoul Frenzy"), -- Ghoul Frenzy (Pet)
+		ClassTimer:CreateSpellEntry("Dark Transformation"), -- Dark Transformation (Pet)
+		ClassTimer:CreateSpellEntry("Bone Shield"), -- Bone Shield
   },
   procs = {
 
   }
 }
-
-ClassTimer.AddClassPosition["DEATHKNIGHT"] = function (self)
-	-- Offset the frame higher by 8px to accommodate the rune bar
-	self:SetPoint( "BOTTOMLEFT", oUF_TukuiPlayer, "TOPLEFT", 0, 14 );
-	self:SetPoint( "BOTTOMRIGHT", oUF_TukuiPlayer, "TOPRIGHT", 0, 14 );
-end
